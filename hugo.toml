@@ -1,0 +1,7 @@
+baseURL = 'https://oleg.rocks/'
+title = 'oleg.rocks'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
