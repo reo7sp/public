@@ -28,7 +28,7 @@ jobs:
       - name: Activate virtualenv
         run: |
           make venv
-          . .venv/bin/activate
+          . venv/bin/activate
           echo PATH=$PATH >> $GITHUB_ENV
           make requirements
       - name: Make
