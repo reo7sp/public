@@ -1,9 +1,9 @@
 .PHONY: dist
 dist: clean
-	mkdir -p dist dist/images dist/content
+	mkdir -p dist dist/images dist/notes
 	cp -r images/* dist/images/
 	jinja index.html.j2 -o dist/index.html
-	jinja content.html.j2 -o dist/content/index.html
+	jinja notes.html.j2 -o dist/notes/index.html
 
 .PHONY: dist
 serve: dist
