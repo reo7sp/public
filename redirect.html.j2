@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Перенаправление...</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        a:visited {
+            color: #0000FF;
+        }
+    </style>
+</head>
+<body>
+    <p>Перенаправление... <a href="{{ url }}">Нажмите здесь, если перенаправление не произошло автоматически</a>.</p>
+    <script>
+        window.location.href = "{{ url }}";
+    </script>
+</body>
+</html>
